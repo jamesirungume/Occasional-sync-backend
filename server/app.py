@@ -10,7 +10,7 @@ from email_validator import validate_email, EmailNotValidError
 from datetime import datetime
 from models import db, User, Event, EventNotification
 
-app = Flask(__name__)
+application = Flask(__name__)  # Change 'app' to 'application'
 app.config['SECRET_KEY'] = 'your_secret_key'
 app.config['JWT_SECRET_KEY'] = 'jwt_secret_key'
 
